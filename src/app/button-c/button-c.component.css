@@ -1,0 +1,20 @@
+
+.custom-button {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  /* transition: background-color 1s; */
+}
+
+/* .custom-button:active{
+ 
+  color: #18dc42 ;
+  transition: color 0.1s;
+
+
+} */
+
+.srch{
+  color: aliceblue;
+  height: 20px;
+}

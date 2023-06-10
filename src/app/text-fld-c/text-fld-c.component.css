@@ -1,0 +1,23 @@
+.cont{
+  margin-right: 0;
+  /* background-color: aqua; */
+  height: 83%; 
+  max-height: fit-content;
+  display: flex;
+  align-items:flex-end;
+}
+
+
+mat-form-field {
+  
+    display: flex;
+    justify-content: center;
+    width: 88%;
+    max-width: 740px; /* Adjust the max-width as per your requirements */
+    margin: 0 auto;
+    /* make text larger when zooming in */
+    /* height:500px; */
+    
+    /* font-size: 200px; */
+}
+
