@@ -1,0 +1,10 @@
+.recved {
+    background-color: rgba(189, 199, 207, 0.614);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.inner {
+    /* margin: auto;
+    padding: auto; */
+}

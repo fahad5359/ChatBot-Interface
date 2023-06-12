@@ -18,6 +18,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatDividerModule} from '@angular/material/divider';
 import { NgIf } from '@angular/common';
+import { MegaContComponent } from './mega-cont/mega-cont.component';
 
 
 
@@ -29,6 +30,7 @@ import { NgIf } from '@angular/common';
     TextFldCComponent,
     SentMsgCComponent,
     RecvdMsgCComponent,
+    MegaContComponent,
    
   ],
   imports: [
