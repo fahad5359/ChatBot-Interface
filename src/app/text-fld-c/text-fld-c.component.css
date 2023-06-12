@@ -1,5 +1,14 @@
-mat-form-field {
-    width: 80vh;
-    text-align: center;
+.inputFld {
+    /* max-width: 90vh; */
+    /* text-align: center; */
+    padding: 5px;
+    margin: 0;
+    border: none;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    outline: none;
+    background: white;
+    width: 99%;
+
 
 }

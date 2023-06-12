@@ -1,10 +1,10 @@
 .recved {
     background-color: rgba(189, 199, 207, 0.614);
     border-radius: 10px;
-    margin: 10px;
+    margin: auto;
 }
 
 .inner {
-    /* margin: auto;
-    padding: auto; */
+    margin: auto;
+    margin: 30px;
 }
