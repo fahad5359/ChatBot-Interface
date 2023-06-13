@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Messagess } from '../messagess';
 
 @Component({
   selector: 'app-mega-cont',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MegaContComponent implements OnInit {
 
-
+  messagess: Messagess = new Messagess("hla!?");
 
   constructor() { }
 
@@ -18,6 +19,7 @@ export class MegaContComponent implements OnInit {
   writtenTxet: string;
 
   addText() {
+    console.log(this.messagess)
 
     if (this.writtenTxet) {
       this.displayingTextAsChat.push(this.writtenTxet)

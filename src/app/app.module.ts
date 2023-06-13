@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonCComponent } from './button-c/button-c.component';
 import { SideBarCComponent } from './side-bar-c/side-bar-c.component';
-import { TextFldCComponent } from './text-fld-c/text-fld-c.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { RecvdMsgCComponent } from './recvd-msg-c/recvd-msg-c.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,14 +18,15 @@ import { MegaContComponent } from './mega-cont/mega-cont.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     ButtonCComponent,
     SideBarCComponent,
-    TextFldCComponent,
     RecvdMsgCComponent,
     MegaContComponent,
+
 
   ],
   imports: [
