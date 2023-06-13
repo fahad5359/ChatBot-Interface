@@ -14,7 +14,6 @@
 .custom-button:hover {
   /* background-color: #00a846; */
   color: #2ef60f;
-  /* border-top: 1px solid #fff; */
   /* transform: scale(1); */
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   transition: all 0.1s ease-in;

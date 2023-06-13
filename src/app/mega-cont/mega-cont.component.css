@@ -60,7 +60,7 @@
 }
 
 .textInput {
-    /* margin: 20px; */
+    margin: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -78,6 +78,7 @@
 
 .btn {
     flex: 1;
+    margin: 8px;
 }
 
 .moreButtonsEtc {
