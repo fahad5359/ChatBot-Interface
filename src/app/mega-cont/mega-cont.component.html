@@ -1,4 +1,6 @@
 <!-- <p>mega-cont works!</p> -->
+
+
 <div class="megaXL">
     <div class="mega">
 
@@ -8,7 +10,15 @@
 
         <div class="interactipnArea">
             <div class="chat">
-                <app-sent-msg-c></app-sent-msg-c>
+                <div class="sennt" *ngFor="let chat of displayingTextAsChat">
+                    <div class="inner">
+                        <p>{{chat}}</p>
+                    </div>
+                </div>
+
+                <app-recvd-msg-c></app-recvd-msg-c>
+
+                <!-- <app-sent-msg-c></app-sent-msg-c>
                 <app-recvd-msg-c></app-recvd-msg-c>
                 <app-sent-msg-c></app-sent-msg-c>
                 <app-recvd-msg-c></app-recvd-msg-c>
@@ -17,24 +27,26 @@
                 <app-sent-msg-c></app-sent-msg-c>
                 <app-recvd-msg-c></app-recvd-msg-c>
                 <app-sent-msg-c></app-sent-msg-c>
-                <app-recvd-msg-c></app-recvd-msg-c>
-                <app-sent-msg-c></app-sent-msg-c>
-                <app-recvd-msg-c></app-recvd-msg-c>
+                <app-recvd-msg-c></app-recvd-msg-c> -->
+
+
             </div>
 
             <div class="inputt">
                 <div class="textInput">
-                    <app-text-fld-c class="textArea"></app-text-fld-c>
-                    <app-button-c class="btn"></app-button-c>
+                    <input type="text" class="textArea inputFld" [(ngModel)]="writtenTxet">
+                    <!-- <app-text-fld-c class="textArea" [(ngModel)]="ggs"></app-text-fld-c> -->
+                    <app-button-c class="btn" (click)="addText()"></app-button-c>
 
                 </div>
                 <!-- Maybe put more Buttns -->
-                <div class=" moreButtonsEtc">  
+                <div class=" moreButtonsEtc">
+
                     <!-- uncomment to Test responsiveness -->
-                    
+
                     <!-- <small><small>Lorsem ipsum dolor sit, amet consectetur adipisicing elit. D qui optio iusto neque
                             quidemeum provident porro adipisci.</small></small> -->
-                            <!-- <app-button-c ></app-button-c>
+                    <!-- <app-button-c ></app-button-c>
                             <app-button-c ></app-button-c>
                             <app-button-c ></app-button-c> -->
                 </div>
