@@ -73,15 +73,15 @@
     /* position: absolute; */
 }
 
-.textArea {
-    height: 40px;
-    width: 90%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
+
 
 .inputFld {
-    /* max-width: 90vh; */
+
+
+    width: 90%;
+    /* box-shadow: 0 2px 4px rgb(249, 0, 0); */
+    border-radius: 10px;
+    max-width: 90vh;
     /* text-align: center; */
     padding: 5px;
     margin: 0px;
@@ -91,7 +91,7 @@
     outline: none;
     background: white;
     width: 100%;
-    height: 40px;
+    height: 60px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -100,12 +100,22 @@
     margin: 8px;
 }
 
+
+
 .moreButtonsEtc {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
+
+@media (max-width: 230px) {
+
+
+    .inputFld {
+        font-size: 12px;
+    }
+}
 
 /* Track */
 ::-webkit-scrollbar {
