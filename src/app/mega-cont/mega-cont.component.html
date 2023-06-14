@@ -10,32 +10,16 @@
 
         <div class="interactipnArea">
             <div class="chat">
-
-                <div class="sennt" *ngFor="let chat of displayingTextAsChat">
-                    <div class="inner">
-                        <p>{{chat}}</p>
-                    </div>
-                </div>
+                <app-sent-co [mesage]="mesage" [displayingTextAsChat]="displayingTextAsChat"></app-sent-co>
 
                 <app-recvd-msg-c></app-recvd-msg-c>
-
-                <!-- <app-sent-msg-c></app-sent-msg-c>
-                <app-recvd-msg-c></app-recvd-msg-c>
-                <app-sent-msg-c></app-sent-msg-c>
-                <app-recvd-msg-c></app-recvd-msg-c>
-                <app-sent-msg-c></app-sent-msg-c>
-                <app-recvd-msg-c></app-recvd-msg-c>
-                <app-sent-msg-c></app-sent-msg-c>
-                <app-recvd-msg-c></app-recvd-msg-c>
-                <app-sent-msg-c></app-sent-msg-c>
-                <app-recvd-msg-c></app-recvd-msg-c> -->
-
 
             </div>
 
+
             <div class="inputt">
                 <div class="textInput">
-                    <input type="text" class="textArea inputFld" [(ngModel)]="writtenTxet">
+                    <input type="text" class="textArea inputFld" [(ngModel)]="mesage">
                     <!-- <app-text-fld-c class="textArea" [(ngModel)]="ggs"></app-text-fld-c> -->
                     <app-button-c class="btn" (click)="addText()"></app-button-c>
 
@@ -54,9 +38,9 @@
                             <app-button-c ></app-button-c> -->
                 </div>
             </div>
-
         </div>
 
-
     </div>
+
+
 </div>

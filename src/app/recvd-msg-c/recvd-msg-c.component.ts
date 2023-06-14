@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-recvd-msg-c',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./recvd-msg-c.component.css']
 })
 export class RecvdMsgCComponent {
+
+  mesage_receved: string = "tst"
+
 
 }

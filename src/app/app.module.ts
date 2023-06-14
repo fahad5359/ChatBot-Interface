@@ -15,6 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { NgIf } from '@angular/common';
 import { MegaContComponent } from './mega-cont/mega-cont.component';
+import { SentCoComponent } from './sent-co/sent-co.component';
 
 
 
@@ -26,6 +27,7 @@ import { MegaContComponent } from './mega-cont/mega-cont.component';
     SideBarCComponent,
     RecvdMsgCComponent,
     MegaContComponent,
+    SentCoComponent,
 
 
   ],

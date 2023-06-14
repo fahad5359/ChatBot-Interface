@@ -8,21 +8,21 @@ import { Messagess } from '../messagess';
 })
 export class MegaContComponent implements OnInit {
 
-  messagess: Messagess = new Messagess("hla!?");
+
 
   constructor() { }
 
   ngOnInit() { }
   // Bind array To HTML, Add string values to array each time a button is pressed.
   displayingTextAsChat: string[] = [];
+  mesage: string;
 
-  writtenTxet: string;
 
   addText() {
-    console.log(this.messagess)
+    console.log(this.mesage)
 
-    if (this.writtenTxet) {
-      this.displayingTextAsChat.push(this.writtenTxet)
+    if (this.mesage) {
+      this.displayingTextAsChat.push(this.mesage)
     }
   }
 }
