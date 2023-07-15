@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Messagess } from '../messagess';
+
 
 @Component({
   selector: 'app-mega-cont',
@@ -16,7 +16,8 @@ export class MegaContComponent implements OnInit {
   // Bind array To HTML, Add string values to array each time a button is pressed.
   displayingTextAsChat: string[] = [];
   mesage: string;
-
+  responsee:string="";
+  displayingResponseAsChat:string[]=[];
 
   addText() {
     console.log(this.mesage)
