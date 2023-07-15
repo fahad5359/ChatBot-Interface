@@ -13,6 +13,7 @@
         <div class="interactipnArea">
             
             <div class="chat">
+                
             
                 <app-sent-co [mesage]="mesage" [displayingTextAsChat]="displayingTextAsChat"></app-sent-co>                
                 <app-recvd-msg-c [responsee]="responsee" [displayingResponseAsChat]="displayingResponseAsChat"></app-recvd-msg-c>
@@ -25,7 +26,7 @@
                     <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
                     <input type="text" class="textArea inputFld" [(ngModel)]="mesage">
 
-                    <app-button-c class="btn" (click)="addText()"></app-button-c>
+                    <app-button-c class="btn" (click)="sendPrompt()"></app-button-c>
 
                 </div>
 

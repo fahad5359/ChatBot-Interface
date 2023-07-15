@@ -1,5 +1,7 @@
-<div class="recved">
-    <div class="inner" >
-        <p>{{mesage_receved}}</p>
+<div class="recved" *ngFor="let rspns of displayingResponseAsChat" >
+    <div class="inner">
+        <p>{{rspns}}</p>
     </div>
 </div>
+
+

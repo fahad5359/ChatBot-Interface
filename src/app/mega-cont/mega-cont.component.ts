@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MessagessService } from '../services/messagess.service';
+import { DtoPropmt } from '../dto-propmt';
 
 
 @Component({
@@ -9,8 +11,11 @@ import { Component, Input, OnInit } from '@angular/core';
 export class MegaContComponent implements OnInit {
 
 
-
-  constructor() { }
+  dto:DtoPropmt;
+  constructor(private service:MessagessService) { 
+    this.dto= new DtoPropmt();
+  }
+  
 
   ngOnInit() { }
   // Bind array To HTML, Add string values to array each time a button is pressed.
@@ -19,11 +24,28 @@ export class MegaContComponent implements OnInit {
   responsee:string="";
   displayingResponseAsChat:string[]=[];
 
-  addText() {
-    console.log(this.mesage)
-
+  sendPrompt() {
+    // Handle prompt sent 
+    this.dto.prompt=this.mesage
+    console.log("This is the paylowd -->",this.dto)
+    this.service.postPrompt(this.dto).subscribe(
+      response =>{
+        console.log("This is the response --> ",response.resppnse)
+        this.responsee=response.resppnse;
+        this.displayingResponseAsChat.push(this.responsee)
+      },err=>{
+        console.log("This is err message --> ",err.message)
+      }
+    )
+    // push msage Wretten into screen
     if (this.mesage) {
       this.displayingTextAsChat.push(this.mesage)
+    }
+
+    // push response into screen
+
+    if (this.responsee) {
+      
     }
   }
 }

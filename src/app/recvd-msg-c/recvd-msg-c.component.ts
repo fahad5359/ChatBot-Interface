@@ -9,7 +9,10 @@ export class RecvdMsgCComponent {
 
   mesage_receved: string = "tst"
   
-  @Input() displayingResponseAsChat:string[]=[]
-  @Input() responsee:string;
+   @Input() displayingResponseAsChat:string[]=[]
+  @Input() responsee:string="HEllo";
 
+  addText() {
+ 
+  }
 }
