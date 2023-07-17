@@ -25,7 +25,7 @@
 .sideBar {
 
     max-width: 20%;
-    background-color: #292929;
+    background-color: #f8f8f8;
 
 }
 
@@ -38,13 +38,12 @@
 }
 
 .chat {
-    /* background-color: #dadada; */
+    background-color: #e1eaf1;
     flex: 1;
     width: auto;
     overflow-y: auto;
     flex-direction: column;
-    /* padding: 200px; */
-    /* background-color: #292929; */
+  border-radius: 10px;
 
 
 }

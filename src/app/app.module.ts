@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ButtonCComponent } from './button-c/button-c.component';
 import { SideBarCComponent } from './side-bar-c/side-bar-c.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { RecvdMsgCComponent } from './recvd-msg-c/recvd-msg-c.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
@@ -15,8 +15,9 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { NgIf } from '@angular/common';
 import { MegaContComponent } from './mega-cont/mega-cont.component';
-import { SentCoComponent } from './sent-co/sent-co.component';
+
 import { HttpClientModule } from '@angular/common/http';
+import { AllChatComponent } from './all-chat/all-chat.component';
 
 
 
@@ -26,9 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     ButtonCComponent,
     SideBarCComponent,
-    RecvdMsgCComponent,
     MegaContComponent,
-    SentCoComponent,
+    AllChatComponent,
 
 
   ],

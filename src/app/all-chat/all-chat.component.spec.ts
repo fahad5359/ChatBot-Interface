@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SentCoComponent } from './sent-co.component';
+import { AllChatComponent } from './all-chat.component';
 
-describe('SentCoComponent', () => {
-  let component: SentCoComponent;
-  let fixture: ComponentFixture<SentCoComponent>;
+describe('AllChatComponent', () => {
+  let component: AllChatComponent;
+  let fixture: ComponentFixture<AllChatComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SentCoComponent]
+      declarations: [AllChatComponent]
     });
-    fixture = TestBed.createComponent(SentCoComponent);
+    fixture = TestBed.createComponent(AllChatComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

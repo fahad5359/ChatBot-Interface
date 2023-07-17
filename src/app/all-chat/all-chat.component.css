@@ -1,0 +1,24 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+ 
+  .user-message {
+    background-color: #e1eaf1;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    /* align-self: flex-end; */
+  }
+  
+  .response-message {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+    /* align-self: flex-start; */
+  }
+  
