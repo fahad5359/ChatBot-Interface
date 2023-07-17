@@ -6,10 +6,10 @@
 ``` shell
 #1
 git clone git@github.com:fahad5359/ChatBot-Interface.git 
-
 #2
 cd ChatBot-Interface
-
+#4
+nvm use v20.3.1
 #3
 ng serve
 ```
