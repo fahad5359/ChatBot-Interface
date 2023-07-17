@@ -11,7 +11,7 @@
     display: flex;
 
     justify-content: center;
-    width: 600px;
+    width: 700px;
     max-width: 900px;
     /* For box size uncommint this and backgrnd color to see */
     padding: 1%;
@@ -38,7 +38,7 @@
 }
 
 .chat {
-    background-color: #e1eaf1;
+    background-color: rgba(238, 238, 229, 0.199);
     flex: 1;
     width: auto;
     overflow-y: auto;
@@ -61,16 +61,11 @@
     display: flex;
     align-items: center;
     margin-top: 10px;
+    
   }
-  
- 
-  
-  
-  
-
-
 
 .inputt {
+   
     display: flex;
     flex-direction: column;
     position: sticky;
@@ -83,6 +78,7 @@
 }
 
 .textInput {
+    
     margin: 20px;
     width: 100%;
     display: flex;
@@ -95,7 +91,7 @@
 
 
 .inputFld {
-
+ 
 
     width: 90%;
     /* box-shadow: 0 2px 4px rgb(249, 0, 0); */
