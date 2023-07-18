@@ -4,6 +4,7 @@
 <div class="megaXL">
     <div class="mega">
 
+        <!-- Enable side Bar -->
         <!-- <div class="sideBar">
             <app-side-bar-c></app-side-bar-c>
         </div> -->
@@ -15,33 +16,14 @@
             <div class="chat">
 
                 <app-all-chat [mesage]="mesage" [displayingTextAsChat]="displayingTextAsChat" [responsee]="responsee" [displayingResponseAsChat]="displayingResponseAsChat" ></app-all-chat>
-                <!-- <app-sent-co [mesage]="mesage" [displayingTextAsChat]="displayingTextAsChat" [responsee]="responsee" [displayingResponseAsChat]="displayingResponseAsChat"></app-sent-co>                 -->
-            
-                <!-- <app-recvd-msg-c [responsee]="responsee" [displayingResponseAsChat]="displayingResponseAsChat"></app-recvd-msg-c> -->
-            
+
             </div>
         
 
             <div class="inputt">
                 <div class="textInput">
-                    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
                     <input type="text" class="textArea inputFld" [(ngModel)]="mesage">
-
-                    <app-button-c class="btn" (click)="sendPrompt()"></app-button-c>
-
-                </div>
-
-                <!-- Maybe put more Buttns -->
-                <div class=" moreButtonsEtc">
-
-
-                    <!-- uncomment to Test responsiveness -->
-
-                    <!-- <small><small>Lorsem ipsum dolor sit, amet consectetur adipisicing elit. D qui optio iusto neque
-                            quidemeum provident porro adipisci.</small></small> -->
-                    <!-- <app-button-c ></app-button-c>
-                            <app-button-c ></app-button-c>
-                            <app-button-c ></app-button-c> -->
+                    <app-button-c class="btn" (click)="sendPrompt();mesage=''" ></app-button-c>
                 </div>
             </div>
         </div>
