@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Tst } from '../tst';
 
 @Component({
   selector: 'app-all-chat',
@@ -23,4 +24,7 @@ export class AllChatComponent {
       response: this.displayingResponseAsChat[index] || ''
     }));
   }
+
+
+
 }

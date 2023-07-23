@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MessagessService } from '../services/messagess.service';
-import { DtoPropmt } from '../dto-propmt';
+import { MessagessService } from '../Model/messagess.service';
+import { DtoPropmt } from '../DTO/dto-propmt';
+import { Tst } from '../tst';
 
 
 @Component({
@@ -8,7 +9,7 @@ import { DtoPropmt } from '../dto-propmt';
   templateUrl: './mega-cont.component.html',
   styleUrls: ['./mega-cont.component.css']
 })
-export class MegaContComponent implements OnInit {
+export class MegaContComponent {
 
 
   dto:DtoPropmt;
@@ -17,10 +18,10 @@ export class MegaContComponent implements OnInit {
   }
   
 
-  ngOnInit() { }
-  // Bind array To HTML, Add string values to array each time a button is pressed.
+  
+  // Add string values to array each time a button is pressed. then display array using string interpolation.
   displayingTextAsChat: string[] = [];
-  mesage: string;
+  mesage: string="";
   responsee:string="";
   displayingResponseAsChat:string[]=[];
 
@@ -28,7 +29,7 @@ export class MegaContComponent implements OnInit {
     // Handle prompt sent 
     this.dto.prompt=this.mesage
     console.log("This is the paylowd -->",this.dto)
-    this.service.postPrompt(this.dto).subscribe(
+    this.service.postPromptGPT(this.dto).subscribe(
       response =>{
         console.log("This is the response --> ",response.resppnse)
         this.responsee=response.resppnse;
@@ -41,11 +42,7 @@ export class MegaContComponent implements OnInit {
     if (this.mesage) {
       this.displayingTextAsChat.push(this.mesage)
     }
-
-    // push response into screen
-
-    if (this.responsee) {
-      
-    }
   }
+
+
 }
