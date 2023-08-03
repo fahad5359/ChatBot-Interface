@@ -5,13 +5,14 @@
 3) كتابة الامر المعطى لتشغيل تطبيق  `Angular`
 ``` shell
 #1
-git clone git@github.com:fahad5359/ChatBot-Interface.git 
-#2
-cd ChatBot-Interface
-#4
+git clone git@github.com:fahad5359/ChatBot-Interface.git && cd ChatBot-Interface
+
+#3 Install and use nvm for node version management
+
 nvm use v20.3.1
-#3
+#4
 ng serve
+
 ```
 	
 
